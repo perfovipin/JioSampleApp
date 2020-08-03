@@ -1,0 +1,3 @@
+include ':leanback-jioext'
+include ':app'
+rootProject.name = "Sampe TV App"
