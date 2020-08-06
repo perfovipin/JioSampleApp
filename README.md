@@ -4,7 +4,7 @@ App is a demo of custom library [leanback-jioext](https://github.com/perfovipin/
 
 ## Screenshot
 
-![Image 1](Screenshot_1.png)
+![Image 1](pictures/1.png)
 
 
 ## License
