@@ -86,13 +86,14 @@ class VideoDetailsFragment : DetailsFragment() {
     private fun setupDetailsOverviewRow() {
         Log.d(TAG, "doInBackground: " + mSelectedMovie?.toString())
         val row = DetailsOverviewRow(mSelectedMovie)
-        row.imageDrawable = ContextCompat.getDrawable(context, R.drawable.default_background)
+
+        row.imageDrawable = ContextCompat.getDrawable(context, R.drawable.app_icon_your_company)
         val width = convertDpToPixel(context, DETAIL_THUMB_WIDTH)
         val height = convertDpToPixel(context, DETAIL_THUMB_HEIGHT)
         Glide.with(context)
                 .load(mSelectedMovie?.cardImageUrl)
                 .centerCrop()
-                .error(R.drawable.default_background)
+                .error(R.drawable.app_icon_your_company)
                 .into<SimpleTarget<GlideDrawable>>(object : SimpleTarget<GlideDrawable>(width, height) {
                     override fun onResourceReady(resource: GlideDrawable,
                                                  glideAnimation: GlideAnimation<in GlideDrawable>) {
